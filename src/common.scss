@@ -1,0 +1,237 @@
+@import "./commonColor.css";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+/* common styles start*/
+.heading1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.heading2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.text_rqt {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primarary-clr);
+}
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--blacck-clr);
+}
+.btn1 {
+  border: 2px solid var(--primarary-clr);
+  color: var(--primarary-clr);
+  background-color: var(--white-clr);
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 4px 34px;
+  margin: 5px 0px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  &:active {
+    background-color: var(--primarary-clr);
+    color: var(--white-clr);
+  }
+}
+.btn2 {
+  border: 2px solid var(--primarary-clr);
+  color: var(--white-clr);
+  background-color: var(--primarary-clr);
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 4px 34px;
+  margin: 5px 0px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  &:active {
+    font-size: 14px;
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.editbtn {
+  color: var(--white-clr);
+  background-color: var(--black-clr);
+  border: 2px solid var(--black-clr);
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 4px 34px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.house-details {
+  font-size: 20px;
+  color: red;
+  margin-top: 10px;
+  font-weight: 700;
+}
+/* common styles  end*/
+
+/* sidebar start */
+.sidebar {
+  height: 100%;
+  .bar-icon {
+    font-size: 26px;
+    margin-top: 10px;
+    padding: 4px;
+    margin-left: 20px;
+  }
+  .sidnav {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none !important;
+    border-left: 6px solid var(--white-clr);
+    color: var(--gray-clr);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      border-left: 6px solid var(--primarary-clr);
+      color: var(--black-clr);
+    }
+    i {
+      font-size: 26px;
+    }
+    p {
+      margin: 0;
+      color: var(--black-clr);
+      font-weight: 700;
+      text-wrap: nowrap;
+      font-size: 16px;
+    }
+  }
+  .curent-sidnav {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    border-left: 6px solid var(--primarary-clr);
+    color: var(--black-clr);
+    i {
+      font-size: 26px;
+    }
+    p {
+      margin: 0;
+      color: var(--black-clr);
+      font-weight: 700;
+      text-wrap: nowrap;
+      font-size: 16px;
+    }
+  }
+}
+/* sidebar end */
+
+/* my-moves start*/
+.my-moves {
+  margin-top: 20px;
+  .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 20px 0px;
+  }
+  .arrow {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px 8px;
+    color: var(--primarary-clr);
+    background-color: var(--white-clr);
+    margin: 20px 0px;
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .check-icon {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      i {
+        color: var(--primarary-clr);
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+    .text-icons {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      i {
+        color: var(--primarary-clr);
+        font-size: 28px;
+        margin-right: 10px;
+      }
+      .edit {
+        i {
+          color: gray;
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .alert {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    justify-content: start;
+    padding: 0px;
+    i {
+      color: var(--primarary-clr);
+      font-size: 18px;
+    }
+  }
+  .inventorydetails {
+    .inve-dteails {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+}
+/* my-moves end*/
+
+/* accordion start */
+.acordion {
+  margin: 20px 0px;
+  .acordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    .count {
+      color: white;
+      background-color: red;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 0px 8px;
+    }
+    p {
+      color: red;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}
+/* accordion end */
